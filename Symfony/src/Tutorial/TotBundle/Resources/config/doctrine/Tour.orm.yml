@@ -1,0 +1,25 @@
+Tutorial\TotBundle\Entity\Tour:
+    type: entity
+    table: tour
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        city:
+            type: integer
+            unsigned: false
+            nullable: false
+        category:
+            type: integer
+            unsigned: false
+            nullable: false
+    lifecycleCallbacks: {  }

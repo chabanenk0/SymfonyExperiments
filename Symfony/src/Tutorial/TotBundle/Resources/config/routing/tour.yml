@@ -1,0 +1,30 @@
+tour:
+    pattern:  /
+    defaults: { _controller: "TutorialTotBundle:Tour:index" }
+
+tour_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TutorialTotBundle:Tour:show" }
+
+tour_new:
+    pattern:  /new
+    defaults: { _controller: "TutorialTotBundle:Tour:new" }
+
+tour_create:
+    pattern:  /create
+    defaults: { _controller: "TutorialTotBundle:Tour:create" }
+    requirements: { _method: post }
+
+tour_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TutorialTotBundle:Tour:edit" }
+
+tour_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TutorialTotBundle:Tour:update" }
+    requirements: { _method: post|put }
+
+tour_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TutorialTotBundle:Tour:delete" }
+    requirements: { _method: post|delete }

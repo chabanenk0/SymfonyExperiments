@@ -1,0 +1,30 @@
+tourcategoryconn:
+    pattern:  /
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:index" }
+
+tourcategoryconn_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:show" }
+
+tourcategoryconn_new:
+    pattern:  /new
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:new" }
+
+tourcategoryconn_create:
+    pattern:  /create
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:create" }
+    requirements: { _method: post }
+
+tourcategoryconn_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:edit" }
+
+tourcategoryconn_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:update" }
+    requirements: { _method: post|put }
+
+tourcategoryconn_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TutorialTotBundle:TourCategoryConn:delete" }
+    requirements: { _method: post|delete }

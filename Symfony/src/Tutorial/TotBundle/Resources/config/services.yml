@@ -1,0 +1,7 @@
+parameters:
+#    tutorial_tot.example.class: Tutorial\TotBundle\Example
+
+services:
+#    tutorial_tot.example:
+#        class: %tutorial_tot.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

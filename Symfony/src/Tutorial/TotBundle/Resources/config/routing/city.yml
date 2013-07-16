@@ -1,0 +1,30 @@
+city:
+    pattern:  /
+    defaults: { _controller: "TutorialTotBundle:City:index" }
+
+city_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TutorialTotBundle:City:show" }
+
+city_new:
+    pattern:  /new
+    defaults: { _controller: "TutorialTotBundle:City:new" }
+
+city_create:
+    pattern:  /create
+    defaults: { _controller: "TutorialTotBundle:City:create" }
+    requirements: { _method: post }
+
+city_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TutorialTotBundle:City:edit" }
+
+city_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TutorialTotBundle:City:update" }
+    requirements: { _method: post|put }
+
+city_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TutorialTotBundle:City:delete" }
+    requirements: { _method: post|delete }

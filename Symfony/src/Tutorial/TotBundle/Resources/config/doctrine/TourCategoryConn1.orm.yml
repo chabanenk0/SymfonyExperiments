@@ -1,0 +1,15 @@
+Tutorial\TotBundle\Entity\TourCategoryConn1:
+    type: entity
+    table: null
+    repositoryClass: Tutorial\TotBundle\Entity\TourCategoryConn1Repository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        tour:
+            type: integer
+        category:
+            type: integer
+    lifecycleCallbacks: {  }

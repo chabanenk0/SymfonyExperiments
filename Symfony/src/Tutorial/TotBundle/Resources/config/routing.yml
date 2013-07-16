@@ -1,0 +1,131 @@
+tutorial_tot_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TutorialTotBundle:Default:index }
+city:
+    pattern:  /city/
+    defaults: { _controller: "TutorialTotBundle:City:index" }
+
+city_show:
+    pattern:  /city/{id}/show
+    defaults: { _controller: "TutorialTotBundle:City:show" }
+
+city_new:
+    pattern:  /city/new
+    defaults: { _controller: "TutorialTotBundle:City:new" }
+
+city_create:
+    pattern:  /city/create
+    defaults: { _controller: "TutorialTotBundle:City:create" }
+    requirements: { _method: post }
+
+city_edit:
+    pattern:  /city/{id}/edit
+    defaults: { _controller: "TutorialTotBundle:City:edit" }
+
+city_update:
+    pattern:  /city/{id}/update
+    defaults: { _controller: "TutorialTotBundle:City:update" }
+    requirements: { _method: post|put }
+
+city_delete:
+    pattern:  /city/{id}/delete
+    defaults: { _controller: "TutorialTotBundle:City:delete" }
+    requirements: { _method: post|delete }
+
+tour:
+    pattern:  /tour/
+    defaults: { _controller: "TutorialTotBundle:Tour:index" }
+
+tour_show:
+    pattern:  /tour/{id}/show
+    defaults: { _controller: "TutorialTotBundle:Tour:show" }
+
+tour_new:
+    pattern:  /tour/new
+    defaults: { _controller: "TutorialTotBundle:Tour:new"}
+    requirements: { _method: get|post }
+
+tour_create:
+    pattern:  /tour/create
+    defaults: { _controller: "TutorialTotBundle:Tour:create" }
+    requirements: { _method: post }
+
+tour_edit:
+    pattern:  /tour/{id}/edit
+    defaults: { _controller: "TutorialTotBundle:Tour:edit" }
+
+tour_update:
+    pattern:  /tour/{id}/update
+    defaults: { _controller: "TutorialTotBundle:Tour:update" }
+    requirements: { _method: post|put }
+
+tour_delete:
+    pattern:  /tour/{id}/delete
+    defaults: { _controller: "TutorialTotBundle:Tour:delete" }
+    requirements: { _method: post|delete }
+
+
+category:
+    pattern:  /categ/
+    defaults: { _controller: "TutorialTotBundle:Category:index" }
+
+category_show:
+    pattern:  /categ/{id}/show
+    defaults: { _controller: "TutorialTotBundle:Category:show" }
+
+category_new:
+    pattern:  /categ/new
+    defaults: { _controller: "TutorialTotBundle:Category:new" }
+
+category_create:
+    pattern:  /categ/create
+    defaults: { _controller: "TutorialTotBundle:Category:create" }
+    requirements: { _method: post }
+
+category_edit:
+    pattern:  /categ/{id}/edit
+    defaults: { _controller: "TutorialTotBundle:Category:edit" }
+
+category_update:
+    pattern:  /categ/{id}/update
+    defaults: { _controller: "TutorialTotBundle:Category:update" }
+    requirements: { _method: post|put }
+
+category_delete:
+    pattern:  /categ/{id}/delete
+    defaults: { _controller: "TutorialTotBundle:Category:delete" }
+    requirements: { _method: post|delete }
+
+
+
+
+categtourcon:
+    pattern:  /catcon2/
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:index" }
+
+categtourcon_show:
+    pattern:  /catcon2/{id}/show
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:show" }
+
+categtourcon_new:
+    pattern:  /catcon2/new
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:new" }
+
+categtourcon_create:
+    pattern:  /catcon2/create
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:create" }
+    requirements: { _method: post }
+
+categtourcon_edit:
+    pattern:  /catcon2/{id}/edit
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:edit" }
+
+categtourcon_update:
+    pattern:  /catcon2/{id}/update
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:update" }
+    requirements: { _method: post|put }
+
+categtourcon_delete:
+    pattern:  /catcon2/{id}/delete
+    defaults: { _controller: "TutorialTotBundle:CategTourCon:delete" }
+    requirements: { _method: post|delete }
